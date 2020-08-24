@@ -29,7 +29,9 @@ int main() {
     int answer = 0;
 
     while (n != 1) {
+        // 나누어 떨어지면 나눔
         if (n % k == 0) n /= k;
+        // 아니면 1 빼기
         else n--;
         answer++;
     }

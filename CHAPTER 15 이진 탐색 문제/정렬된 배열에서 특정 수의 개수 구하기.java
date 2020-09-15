@@ -30,11 +30,11 @@ public class Main_01 {
         int n = sc.nextInt();
         int x = sc.nextInt();
         sc.nextLine();
-        String reg = "[^" + x + "]";
-        String str = sc.nextLine();
-
-        str = str.replaceAll(reg, "");
-        int answer = str.length() == 0? -1 : str.length();
+        int[] array = new int[n];
+        for(int i=0; i<n; i++) {
+            array[sc.nextInt()]++;
+        }
+        int answer = array[x] == 0? -1 : array[x];
         System.out.println(answer);
 
     }
